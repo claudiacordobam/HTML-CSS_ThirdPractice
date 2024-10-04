@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=PT+Serif+Caption:ital@0;1&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'PT Serif Caption', serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  margin: auto;
+}
+
+/*Header**/
+/*Orange banner styling*/
+.orange-banner {
+  background-color: RGB(242,112,42);
+  display: flex;
+  height: 110px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.logo {
+  height: 80px;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Madimi One', sans-serif;
+   text-shadow:
+    2px 2px 3px white;
+}
+
+/*Navbar styling*/
+nav {
+  margin-bottom: 40px;
+  padding: 0px;
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  height: 45px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:left;
+  align-items: center;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 0px;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover,
+nav ul li a:focus-within {
+  /*color: RGB(242,112,42);*/ /*Removed due to accessibility issues -low contrast-*/
+  color: #D33503;
+  text-decoration: underline;
+}
+
+/*Main styling*/
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  /*padding: 10px;*/
+}
+
+h2 {
+  font-family: 'Madimi One', sans-serif;
+  /*color: RGB(242,112,42);*/ /*Removed due to accessibility issues -low contrast-*/
+  color: #D33503;
+  margin-bottom: 0.5%;
+}
+
+.h2-underline {
+  border-style: none none dashed;
+  /*border-color: RGB(242,112,42);*/ /*Removed due to accessibility issues -low contrast-*/
+  border-color: #D33503;
+  border-width: medium;
+}
+
+/*Grid 1 (sneakers and products) styling*/
+
+.sneakers {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  height: 100%;
+  /*width: 100%;*/
+  justify-content: inherit;
+  align-items: center;   
+  border: 1px solid;
+  padding: 0;
+  overflow: hidden;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.products {
+  display: grid;
+  grid-gap: 2%;
+  gap: 2%;
+  justify-content: inherit;
+  margin-bottom: 5%;
+  width: 100%;
+  max-width: 100%;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.img-product-picture {
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+
+.green-converse {
+  height: 140px;
+}
+
+.product-price {
+  background-color: #F5F5F5;
+  font-size: 300%;
+  text-align: center;
+  height: 100%;
+  align-content: center;
+} 
+
+.div-sneakers-ul {
+  width: 220px;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 2%;
+}
+
+.title-sneakers-ul {
+  font-family: 'Madimi One', sans-serif;
+  font-size: 1.2rem;
+}
+
+.sneakers-ul {
+  width: 220px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #DCDCDC;
+}
+
+.sneakers-ul li {
+  list-style: none;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding-left: 1.75rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #ADD8E6;
+  font-family: 'PT Serif Caption', serif;
+  font-size: 1rem;
+}
+
+.sneakers-ul li:last-child {
+  border-bottom: none;
+}
+
+/*Grid 2 (do sports) styling*/
+.sports {
+  display: grid;
+  grid-template-rows: 1fr 1.1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+  gap: 2%;
+  margin-bottom: 5%;
+}
+
+.sport-1 {
+  /*grid-area: row-start / column-start / row-end / column-end*/
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sport-2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.sport-3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.sport-4 {
+  grid-area: 2 / 2 / 2 / 3;
+}
+
+.sport-5 {
+  grid-area: 2 / 3 / 2 / 4;
+}
+
+.sport-6 {
+  grid-area: 2 / 4 / 2 / 5;
+}
+
+figure {
+  background-color: #F5F5F5;
+  border-radius: 5%;
+  box-shadow: 0px 1px 2px #AAAAAA;
+  margin: 0px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+figcaption {
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 5%;
+}
+
+.sports-picture {
+  height: 300px;
+  margin: 3%;
+  border-radius: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figcaption-sport-3,
+.figcaption-sport-4,
+.figcaption-sport-5,
+.figcaption-sport-6 {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+/*Sign up section*/
+.sign-up {
+  background-color: #F5F5F5;
+  height: 170px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.sign-up p {
+  /*color: RGB(242,112,42);*/ /*Changed to ensure a better accessibility.
+  The contrast could have been considered good enough for large text,
+  but the new colour matches the colour that has been chosen for other sections,
+  and ensures a higher contrast*/
+  color: #D33503;
+  font-family: 'Madimi One', sans-serif;
+  font-size: 1.5rem;
+}
+
+button {
+  /*background-color: RGB(242,112,42);*/ /*Changed to match .sign-up p's colour*/
+  background-color: #D33503 /*#C64607;*/;
+  border: none;
+  border-radius: 4px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #ffffff;
+  font-family: 'PT Serif Caption', serif;
+  margin-bottom: 10px;
+}
+
+button:hover
+/*button:focus-within*/ {
+  transform:scale(1.1);
+}
+
+/*The transform property has been commented for :focus-within as
+the WCAG guidelines establish that no element should change its shape
+when being focused with a keyboard*/
+
+button:active {
+  text-decoration: underline;
+  transform:scale(1.1);
+}
+
+/*Address and social media DIV*/
+.address-media {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/**Footer**/
+
+.footer-ul {
+  background-color: RGB(39,47,46);
+}
+
+.footer-ul ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 0px;
+  list-style: none;
+  height: 80px;
+}
+
+.footer-ul ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer-ul ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-ul ul li a:hover,
+.footer-ul ul li a:focus-within {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+.dot {
+  color: white;
+  padding-bottom: 9px;
+
+}
+
+/**CSS SPRITES**/
+span.sprite a:link,
+span.sprite a:visited {
+  display: inline-block;
+}
+
+/**Facebook**/
+span.facebook a:link,
+span.facebook a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) 0 0;
+}
+
+span.facebook a:hover,
+span.facebook a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) 0 -60px;
+}
+
+/**LinkedIn**/
+span.linkedin a:link,
+span.linkedin a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -60px 0;
+}
+
+span.linkedin a:hover,
+span.linkedin a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -60px -60px;
+}
+
+/**Twitter**/
+span.twitter a:link,
+span.twitter a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -120px 0;
+}
+
+span.twitter a:hover,
+span.twitter a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -120px -60px;
+}
+
+/**Instagram**/
+span.instagram a:link,
+span.instagram a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -180px 0;
+}
+
+span.instagram a:hover,
+span.instagram a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -180px -60px;
+}
+
+/**Login**/
+span.login a:link,
+span.login a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -240px 0;
+}
+
+span.login a:hover,
+span.login a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -240px -60px;
+  transform:scale(1.2);
+  transition: 0.5s;
+}
+
+/**Info**/
+span.info a:link,
+span.info a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -300px 0;
+}
+
+span.info a:hover,
+span.info a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -300px -60px;
+  transform:scale(1.2);
+  transition: 0.5s;
+}
+
+/**Shopping cart**/
+span.cart a:link,
+span.cart a:visited {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -360px 0;
+}
+
+span.cart a:hover,
+span.cart a:focus {
+  width: 60px;
+  height: 60px;
+  background: url(../images/contrastsprite.png) -360px -60px;
+  transform:scale(1.2);
+  transition: 0.5s;
+}
+
+
+/*Responsive design*/
+@media screen and (max-width: 950px) {
+  .sports {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    gap: 2%;
+    margin-bottom: 5%;
+  }
+
+  .sport-1 {
+    /*grid-area: row-start / column-start / row-end / column-end*/
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .sport-2 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .sport-3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .sport-4 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .sport-5 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .sport-6 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sneakers {
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 100%;
+    height: 100%;
+    /**width: 100%;**/
+    justify-content: inherit;
+    align-items: center;   
+    border: 1px solid;
+    padding: 0;
+    overflow: hidden;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .products {
+    display: grid;
+    grid-gap: 2%;
+    gap: 2%;
+    flex: 1;
+    justify-content: inherit;
+    margin-bottom: 5%;
+    width: 100%;
+    max-width: 100%;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .title-sneakers-ul {
+    text-align: center;
+  }
+
+  .sneakers-ul li {
+    text-align: left;
+  }
+
+  .div-product-picture-2 {
+    padding-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .address-media {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  .footer-ul ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+    height: 200px;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .sports {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.1fr 1.1fr; 
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .orange-banner {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0px;
+    max-width: 100%;
+    height: 270%;
+  }
+
+  .logo {
+    margin-top: 20%;
+  }
+
+  span.login a:hover,
+  span.login a:focus,
+  span.info a:hover,
+  span.info a:focus,
+  span.cart a:hover,
+  span.cart a:focus {
+    transform:scale(1);
+  }
+
+  .sports {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.2fr 1.2fr; 
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  figcaption {
+    margin-bottom: 10%;
+  }
+
+  figure img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    }
+
+  .figcaption-sport-3
+  .figcaption-sport-4,
+  .figcaption-sport-5,
+  .figcaption-sport-6 {
+    margin-bottom: 20%;
+  }
+
+  .sports {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    gap: 2%;
+    margin-bottom: 5%;
+  }
+
+  .sport-1 {
+    /*grid-area: row-start / column-start / row-end / column-end*/
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .sport-2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .sport-3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .sport-4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .sport-5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .sport-6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+}
